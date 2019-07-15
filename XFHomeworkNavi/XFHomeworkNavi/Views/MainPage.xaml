@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XFHomeworkNavi.Views.MainPage"
+             Title="我的首頁"
+             BackgroundColor="Azure">
+
+    <StackLayout Spacing="5" HorizontalOptions="Fill" VerticalOptions="FillAndExpand" BackgroundColor="Yellow">
+        <Button Text="我的首頁" Command="{Binding GotoMainCommand}" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
+        <Button Text="個人資訊" Command="{Binding GotoInfoCommand}" HorizontalOptions="Center" VerticalOptions="CenterAndExpand"/>
+        <Button Text="主題佈景" Command="{Binding GotoBackgroundCommand}" HorizontalOptions="Center" VerticalOptions="CenterAndExpand"/>
+        <Button Text="登出" Command="{Binding LogoutCommand}" HorizontalOptions="Center" VerticalOptions="CenterAndExpand"/>
+    </StackLayout>
+
+</ContentPage>

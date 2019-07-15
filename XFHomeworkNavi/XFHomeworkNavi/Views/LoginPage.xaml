@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+             prism:ViewModelLocator.AutowireViewModel="True"
+             x:Class="XFHomeworkNavi.Views.LoginPage">
+
+    <StackLayout HorizontalOptions="Fill" VerticalOptions="FillAndExpand" BackgroundColor="Purple">
+        <Entry Text="{Binding Account}" Placeholder="帳號" HorizontalOptions="FillAndExpand" VerticalOptions="Center" BackgroundColor="White"/>
+        <Entry Text="{Binding Password}" Placeholder="密碼" HorizontalOptions="FillAndExpand" VerticalOptions="Center" BackgroundColor="White"/>
+        <Button Text="登入" Command="{Binding LoginCommand}" HorizontalOptions="FillAndExpand" VerticalOptions="Center"/>
+    </StackLayout>
+  
+</ContentPage>
